@@ -1,8 +1,9 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import FullCalendar from '@fullcalendar/react'; // must go before plugins
-import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
-import './App.css';
+import "@fullcalendar/react/dist/vdom";
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import FullCalendar from "@fullcalendar/react"; // must go before plugins
+import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
 
 const Calendar = () => {
   return <FullCalendar plugins={[dayGridPlugin]} initialView="dayGridMonth" />;
@@ -13,7 +14,9 @@ function App() {
 
   return (
     <div className="App">
-      <Calendar />
+      
+        <Calendar />
+      
     </div>
   );
 }
